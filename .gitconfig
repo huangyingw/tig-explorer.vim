@@ -1,0 +1,6 @@
+[remote "iberianpig"]
+	url = git@github.com:iberianpig/tig-explorer.vim.git 
+	fetch = +refs/heads/*:refs/remotes/iberianpig/*
+[gsync]
+    remote = iberianpig
+    target = iberianpig/master
