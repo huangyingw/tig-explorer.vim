@@ -4,3 +4,5 @@
 [gsync]
     remote = iberianpig
     target = iberianpig/master
+[push]
+    remote = origin
