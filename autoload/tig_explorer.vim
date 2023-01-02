@@ -22,7 +22,7 @@ endfunction
 
 function! tig_explorer#open_current_file() abort
   let current_path = expand('%:p')
-  let current_path = substitute(current_path, '\_s\+', '\\ ', "g") 
+  let current_path = substitute(current_path, '\_s', '\\ ', "g")
   :call tig_explorer#open(current_path)
 endfunction
 
@@ -299,7 +299,7 @@ endfunction
 
 function! s:project_root_dir() abort
   let current_file_dir = expand('%:p:h')
-  let current_file_dir = substitute(current_file_dir, '\_s\+', '\\ ', "g") 
+  let current_file_dir = substitute(current_file_dir, '\_s', '\\ ', "g")
   let git_dir = findfile('.git', current_file_dir . ';')
   if git_dir ==# ''
     let git_dir = finddir('.git', current_file_dir . ';')
