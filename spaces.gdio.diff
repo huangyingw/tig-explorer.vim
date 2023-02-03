@@ -1,5 +1,4 @@
 diff --git a/autoload/tig_explorer.vim b/autoload/tig_explorer.vim
-index e533c41..ca18ff8 100644
 --- ./autoload/tig_explorer.vim
 +++ ./autoload/tig_explorer.vim
 @@ -22,6 +22,7 @@ endfunction
